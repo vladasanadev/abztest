@@ -1,0 +1,25 @@
+// Font
+$mainFont: 'nunito';
+
+// Size
+$mainFontSize: 16px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
+$minScreenWidth: 360px;
+$maxScreenWidth: 2560px;
+$maxContainerWidth: 1170px;
+
+
+// Main color
+$primary-color: #F4E041;
+$secondary-color: #00BDD3;
+$bg-color: #F8F8F8;
+
+
+$fonts: (
+	light: 'nunito-light',
+	medium: 'nunito-medium',
+	semibold: 'nunito-semibold',
+	bold: 'nunito-bold',
+);

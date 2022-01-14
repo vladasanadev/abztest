@@ -1,0 +1,101 @@
+.burger-wrapper{
+	float: right;
+	padding-top: rem(14);
+	border: none;
+	background: #fff;
+}
+
+.burger {
+	&__overlay {
+		background: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 16;
+		opacity: 0;
+		transition: 0.5s linear;
+		pointer-events: none;
+
+	}
+}
+.sidebar__wrapper{
+
+}
+.aside {
+	overflow-y: scroll;
+	background-color: #fff;
+	width: calc(100% - 90px);
+	position: fixed;
+	top: 0;
+	left: -100%;
+	bottom: 0;
+	z-index: 16;
+	transition: all 0.5s ease-in-out;
+	&__header {
+		padding: rem(17) 0 rem(17) rem(16);
+		border-bottom: 1px solid #E0E0E0;
+		margin-bottom: rem(31);
+
+	}
+	&__list {
+		text-align: left;
+		font-family: $mainFont;
+
+		&-item {
+			font-size: rem(18);
+			line-height: rem(40);
+			color: $primary-color;
+			margin-bottom: 1em;
+			//cursor: pointer;
+		}
+	}
+}
+.list-item{
+	padding: 0 0 rem(22) rem(16);
+	//margin-bottom: rem(22);
+	font-size: $mainFontSize;
+	line-height: rem(26);
+}
+.list-item:nth-child(5n){
+	border-bottom: 1px solid #E0E0E0;
+	padding-bottom: rem(30);
+	margin-bottom: rem(30);
+}
+.list-item:last-child{
+	margin-bottom: rem(150);
+}
+
+::-webkit-scrollbar {
+	width: 0;  /* Remove scrollbar space */
+	background: transparent;
+}
+.burger__overlay.active {
+	opacity: 1;
+	left: 0;
+	pointer-events: all;
+}
+
+.aside.active {
+	left: 0;
+}
+
+.burger__btn:active {
+	background: rgb(223, 235, 254);
+}
+.footer-wrapper{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: $bg-color;
+	z-index: 100;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+	text-align: center;
+}
+.footer-transition{
+	opacity: 1;
+}
+

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import DesctopHeader from "./components/DesctopHeader/DesctopHeader";
+import {Route} from "react-router";
+import MobileHeader from "./components/MobileHeader/MobileHeader";
+import Header from "./components/Header/Header";
+import useWindowSize from './components/customHooks/useWindowSize'
 
 function App() {
+const type = useWindowSize()
+console.log(type, 'APP')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header type={type}/>
+        {/*<Route exact path="/" component={DesctopHeader} />*/}
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.footer-black-section{
+  padding: rem(20);
+  width: 100%;
+  background-color: black;
+  margin-bottom: rem(15);
+}
+
+.footer-links{
+  text-decoration: none;
+
+}
+.footer-links:hover,focus{
+  background-color: transparent;
+  color: black;
+}
+.footer-last-section{
+  margin: rem(20) 0 rem(15) 0;
+  font-family: $mainFont;
+  line-height: rem(26);
+  color: black;
+  font-size: $mainFontSize;
+  text-align: center;
+}
