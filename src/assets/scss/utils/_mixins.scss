@@ -1,5 +1,5 @@
 // px to rem
-@function rem($pixels, $context: $mainFontSize) {
+@function 	rem($pixels, $context: $mainFontSize) {
 	@if (unitless($pixels)) {
 		$pixels: $pixels * 1px;
 	}
@@ -19,6 +19,10 @@
 	padding: 0 rem(60);
 	max-width: $maxContainerWidth;
 	margin: 0 auto;
+}
+
+@mixin button($btn-background) {
+	background-color:$btn-background;
 }
 
 // placeholder helper

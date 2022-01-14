@@ -17,7 +17,7 @@ export default function useWindowSize() {
                 height: window.innerHeight,
             });
             console.log(window.innerWidth, 'HOOK')
-            if (window.innerWidth > 480)
+            if (window.innerWidth > 768)
             {
                 setType('desctop')
             }

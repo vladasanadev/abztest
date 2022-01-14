@@ -10,3 +10,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+img{
+  width: 100%;
+}
+h1{
+  font-family: nunito, sans-serif;
+  font-weight: 400;
+  font-size: rem(40);
+  line-height: rem(40);
+
+}
+h2{
+  font-family: nunito, sans-serif;
+  font-weight: 400;
+  font-size: rem(22);
+  line-height: rem(28);
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(26);
+}
